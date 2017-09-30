@@ -12,18 +12,22 @@
 .main{
     transition: all .3s ease-in-out;
 }
+.main > .container-fluid{
+  padding-bottom:100px;
+}
 .sidebar {
   width: 240px;
-  height: 100%;
+  height: 100vh !important;
   background: #064d5f;
-  position: absolute;
+  position: fixed;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   z-index: 100;
-  margin-left:-240px;
+  overflow: scroll;
+  margin-left: -240px;
   display: block !important;
   #leftside-navigation {
     ul, ul ul {
@@ -92,6 +96,10 @@
     padding: 12px 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.09);
     box-shadow: 3px 2px 8px 2px rgba(160, 160, 160, 0.18);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
   .menuIcon{
     font-size:30px;
     color:$color1;
@@ -110,6 +118,7 @@
 }
 .container-fluid{
   .homeSlider{
+    margin-top:-30px;
     .owl-carousel{
       .item{
         background-size: cover;
@@ -263,6 +272,10 @@
    }
 }
 footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  z-index: 999;
  .row{
      margin-left: inherit;
      margin-right: inherit;
