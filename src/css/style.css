@@ -6723,27 +6723,29 @@ template {
 [hidden] {
   display: none !important; }
 
+body {
+  background-color: #064d5f; }
+
 .sidebar-toggle {
   margin-left: -240px; }
 
 .main {
-  transition: all .3s ease-in-out; }
+  transition: all .3s ease-in-out;
+  background-color: #fff; }
 
 .main > .container-fluid {
   padding-bottom: 100px; }
 
 .sidebar {
   width: 240px;
-  height: 100vh !important;
   background: #064d5f;
-  position: fixed;
+  position: absolute;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   z-index: 100;
-  overflow: scroll;
   margin-left: -240px;
   display: block !important; }
   .sidebar #leftside-navigation ul, .sidebar #leftside-navigation ul ul {
