@@ -15,7 +15,7 @@ $(document).ready(function() {
 	
 	$('.menuIcon.float-left').click(function(){
 
-		// setMenuHeight();
+		setMenuHeight();
 		var asideLeft = $('aside.sidebar').css("margin-left");
 
 		if(asideLeft == "-240px"){
@@ -38,10 +38,10 @@ $(document).ready(function() {
 	});
 });
 
-// function setMenuHeight(){
-// 	var bodyHeight = $('.main').outerHeight();
-// 	$('.sidebar').height(bodyHeight)
-// }
-// $(window).resize(function() {
-//     setMenuHeight();
-//  });
+function setMenuHeight(){
+	var bodyHeight = $('.main').outerHeight();
+	$('.sidebar').height(bodyHeight)
+}
+$(window).resize(function() {
+    setMenuHeight();
+ });
